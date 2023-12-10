@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заметки</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Заметки</h1>
+    </header>
+    <main>
+      <section class="notes"></section>
+
+      <section class="editor">
+        <div class="creator_info">
+          <input id="name" type="text" alt="name" placeholder="Имя" />
+          <input
+            id="last_name"
+            type="text"
+            alt="surname"
+            placeholder="Фамилия"
+          />
+        </div>
+
+        <div class="editor__text">
+          <textarea
+            name="note_text"
+            id="editor__text"
+            cols="30"
+            rows="10"
+            value="dsfsdfsdfsdf"
+          ></textarea>
+        </div>
+
+        <button class="create__note">Создать заметку</button>
+      </section>
+    </main>
+  </body>
+  <script type="module" src="./index.js"></script>
+</html>
