@@ -15,7 +15,7 @@ export class Note extends HTMLElement {
 
   render() {
     this.innerHTML = `<div class="note" id="note_${this.id}">
-    <a href="./note.html?id=${this.id}">
+    <a href="./note.html?id=${this.id}" draggable="false">
     <div class="note__header">
       <h2>id: ${this.id}</h2>
 
@@ -39,7 +39,7 @@ export class Note extends HTMLElement {
     </a>
     
     <button class="delete" id="delete_${this.id}">
-      <img src="./assets/svg/delete.svg" alt="trash can" />
+      <img src="./assets/svg/delete.svg" alt="trash can" draggable="false"/>
     </button>
   </div>`;
   }
